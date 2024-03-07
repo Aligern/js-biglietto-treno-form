@@ -10,6 +10,9 @@ console.log(elBtngen);
 let elBtnnull = document.querySelector('.btn.bg-warning');
 console.log(elBtnnull);
 
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+    }
 
 elBtngen.addEventListener('click', function(){
     // conferma il click su console 
@@ -30,10 +33,18 @@ elBtngen.addEventListener('click', function(){
     // condizioni 
     if (eta === 'under18user') {
         priceKm -= ( priceKm * under18 );
+        document.getElementById('ticket-type').innerHTML = 'Sconto minori';
     } else if (eta === 'over65user') {
         priceKm -= ( priceKm * over65 );
-    } 
+        document.getElementById('ticket-type').innerHTML = 'Sconto over65';
+    } else {
+        document.getElementById('ticket-type').innerHTML = 'Biglietto standard';
+    }
     console.log(`il prezzo è ${priceKm.toFixed(2)}`);
+    document.getElementById('ticket-user').innerHTML = `${nome}`;
+    document.getElementById('ticket-value').innerHTML = `${priceKm.toFixed(2)}`;
+    document.getElementById('ticket-id').innerHTML = getRndInteger(80000, 99999);
+    document.getElementById('wagon-nmb').innerHTML = getRndInteger(1,9);
 });
 
 elBtnnull.addEventListener('click', function(){
@@ -44,3 +55,4 @@ elBtnnull.addEventListener('click', function(){
     console.log('cancella tutto')
 }
 )
+
