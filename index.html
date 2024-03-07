@@ -12,12 +12,12 @@
 <body>
     <main >
         <div class="wrapper bg-info">
-            <h1 class="text-center text-uppercase">
+            <h1 class="text-center text-uppercase p-3 ">
                 Calcola il prezzo del tuo biglietto
             </h1>
-            <div class="container d-flex justify-content-between p-2 ">
+            <div class="container d-flex justify-content-around bg-white ls-border">
                 <!-- Name and surname form -->
-                <div>
+                <div class="p-2 ">
                     <label for="name-surname">
                         Inserisci Nome e Cognome
                     </label>
@@ -52,22 +52,24 @@
                       </select>
                 </div>
             </div>
-                <!-- action buttons -->
-            <div class="container d-flex justify-content-center gap-2 p-2 ">
-                <button class="btn bg-primary text-white">
-                    Genera
-                </button>
-                <button class="btn bg-warning">
-                    Annulla
-                </button>
+            <!-- action buttons -->
+            <div class="d-flex justify-content-center p-2 text-black ">
+                <div class="gap-3 p-2 d-flex justify-content-center bg-white ls-border ls-width">
+                    <button class="btn btn-outline-secondary text-black">
+                        Genera
+                    </button>
+                    <button class="btn btn-outline-light text-black ls-border-black">
+                        Annulla
+                    </button>
+                </div>
             </div>
             <!-- info output area  -->
-            <div class="container p-2">
+            <div class="container p-2 mt-5 ">
                 <h2 class="text-uppercase text-center">
                     Il tuo biglietto
                 </h2>
                 <div class="d-flex justify-content-between bg-light p-3 ls-border">
-                    <div>
+                    <div class="bg-secondary p-2 ls-border text-white">
                         <h4 class="text-uppercase">
                             Nome e Cognome
                         </h4>
@@ -77,7 +79,7 @@
                             </p>
                         </div>
                     </div>
-                    <div>
+                    <div class="bg-secondary p-2 ls-border text-white ">
                         <h5>
                             Offerta
                         </h5>
@@ -85,7 +87,7 @@
                             tipo di biglietto
                         </p>
                     </div>
-                    <div>
+                    <div class="bg-secondary p-2 ls-border text-white ">
                         <h5>
                             Carrozza
                         </h5>
@@ -93,7 +95,7 @@
                             numero carrozza
                         </p>
                     </div>
-                    <div>
+                    <div class="bg-secondary p-2 ls-border text-white ">
                         <h5>
                             Codice CP
                         </h5>
@@ -101,7 +103,7 @@
                             Codice univoco
                         </p>
                     </div>
-                    <div>
+                    <div class="bg-secondary p-2 ls-border text-white ">
                         <h5>
                             Costo biglietto
                         </h5>

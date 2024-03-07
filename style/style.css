@@ -1,3 +1,13 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
 .ls-border {
     border-radius: 10px;
+}
+.ls-width {
+    width: 200px;
+}
+.ls-border-black {
+    border: 1px solid black;
 }
