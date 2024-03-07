@@ -18,22 +18,28 @@
             <div class="container d-flex justify-content-between p-2">
                 <!-- Name and surname form -->
                 <div>
+                    <label for="name-surname">
+                        Inserisci Nome e Cognome
+                    </label>
                     <div class="input-group mb-3 p-2">
-                        <input type="text" class="form-control" placeholder="Nome e Cognome" aria-label="Username">
+                        <input type="text" class="form-control" id="nome" value="">
                     </div>
                 </div>
                 <!--  Kilometers form -->
                 <div class="p-2">
+                    <label for="kilometers">
+                        Seleziona Kilometraggio
+                    </label>
                     <div class="input-group mb-3 ">
-                        <input type="text" class="form-control" placeholder="Kilometraggio" aria-label="Username">
+                        <input type="text" class="form-control" id="kilometers" value="">
                     </div>
                 </div>
                 <!-- age check form -->
                 <div class="p-2">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>
-                            Fascia d'età
-                        </option>
+                    <label for="age-Select">
+                        Fascia D'età
+                    </label>
+                    <select class="form-select" id="userage">
                         <option value="1">
                             Minorenne
                         </option>
@@ -106,9 +112,6 @@
         </div>
     </main>
 
-
-
-
-    <script src="js/script.js" text="text/javascript"></script>
+    <script src="script/script.js" text="text/javascript"></script>
 </body>
 </html>
