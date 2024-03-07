@@ -31,7 +31,7 @@
                         Seleziona Kilometraggio
                     </label>
                     <div class="input-group mb-3 ">
-                        <input type="text" class="form-control" id="kilometers" value="">
+                        <input type="number" class="form-control" id="kilometers" value="">
                     </div>
                 </div>
                 <!-- age check form -->
@@ -40,13 +40,13 @@
                         Fascia D'età
                     </label>
                     <select class="form-select" id="userage">
-                        <option value="1">
+                        <option value="under18user">
                             Minorenne
                         </option>
-                        <option value="2">
+                        <option value="over18user">
                             Maggiorenne
                         </option>
-                        <option value="3">
+                        <option value="over65user">
                             Over65
                         </option>
                       </select>
@@ -57,7 +57,7 @@
                 <button class="btn bg-primary text-white">
                     Genera
                 </button>
-                <button class="btn bg-warning  ">
+                <button class="btn bg-warning">
                     Annulla
                 </button>
             </div>
